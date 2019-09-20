@@ -1,0 +1,12 @@
+hr.style1{
+	border: 2px solid #e6a756;
+    border-radius: 5px;
+}
+
+ul>.row{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.whiteA{
+	background-color: rgba(255, 255, 255, .85);
+}
