@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () { //home
-    return view('home.home');
-});
+Route::get('/', 'HomeController@index');
+
 Route::get('/iklim', function () { //iklim
     return view('home.iklim');
 });
@@ -34,3 +33,8 @@ Route::get('/desa', function () { //desa
 Route::get('/coba', function () { //coba
     return view('home.coba');
 });
+Route::get('/daftar', 'cobaController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
